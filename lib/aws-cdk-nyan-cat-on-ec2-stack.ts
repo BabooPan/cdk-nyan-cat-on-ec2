@@ -64,7 +64,7 @@ export class AwsCdkNyanCatOnEc2Stack extends cdk.Stack {
     new cdk.CfnOutput(
       this, 'web-endpoint',
       {
-        value: "http://" + web.instancePublicIp + "nyan-cat/"
+        value: "http://" + web.instancePublicIp + "/nyan-cat/"
       }
     )
 

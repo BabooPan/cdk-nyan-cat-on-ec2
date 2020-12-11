@@ -1,14 +1,21 @@
-# Welcome to your CDK TypeScript project!
+# Welcome to aws-cdk-nyan-cat-on-ec2
 
-This is a blank project for TypeScript development with CDK.
+This is a nyan-cat page stored in EC2 Instance writen in TypeScript development with CDK.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Steps
 
-## Useful commands
+Deploy with `cdk deploy`, and hold the seconds, the endpoint of website would print out.
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+![cdk-deploy](./images/cdk-deploy.png)
+
+The EC2 Instance would take some times, the endpoint would show out.
+
+![nyan-cat](./images/nyan-cat.jpg)
+
+After that, remember to clean up this stack with `cdk destory`.
+
+![cdk-destory](./images/cdk-destory.png)
+
+## Reference
+
+* web page for nyan-cat [cristurm/nyan-cat](https://github.com/cristurm/nyan-cat)
