@@ -1,7 +1,6 @@
-import { AmazonLinuxCpuType, AmazonLinuxGeneration, InstanceSize, SecurityGroup, UserData, Vpc } from '@aws-cdk/aws-ec2';
 import * as cdk from '@aws-cdk/core';
 import * as ec2 from '@aws-cdk/aws-ec2';
-import { Fn } from '@aws-cdk/core';
+
 
 export class AwsCdkNyanCatOnEc2Stack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
@@ -9,7 +8,7 @@ export class AwsCdkNyanCatOnEc2Stack extends cdk.Stack {
 
     const vpc = new ec2.Vpc(
       this, 'web-vpc',
-      { 
+      {
         maxAzs: 1,
         natGateways: 0,
         subnetConfiguration: [
@@ -22,7 +21,7 @@ export class AwsCdkNyanCatOnEc2Stack extends cdk.Stack {
       }
     )
 
-    const userdata = UserData.forLinux()
+    const userdata = ec2.UserData.forLinux()
 
     userdata.addCommands(
       `sudo yum update -y`,
@@ -52,8 +51,8 @@ export class AwsCdkNyanCatOnEc2Stack extends cdk.Stack {
         instanceType: ec2.InstanceType.of(ec2.InstanceClass.BURSTABLE4_GRAVITON, ec2.InstanceSize.MICRO),
         machineImage: new ec2.AmazonLinuxImage(
           {
-            generation: AmazonLinuxGeneration.AMAZON_LINUX_2,
-            cpuType: AmazonLinuxCpuType.ARM_64
+            generation: ec2.AmazonLinuxGeneration.AMAZON_LINUX_2,
+            cpuType: ec2.AmazonLinuxCpuType.ARM_64
           }
         ),
         userData: userdata,
@@ -71,3 +70,15 @@ export class AwsCdkNyanCatOnEc2Stack extends cdk.Stack {
   }
 }
 
+
+// for development, use account/region from cdk cli
+const devEnv = {
+  account: process.env.CDK_DEFAULT_ACCOUNT,
+  region: process.env.CDK_DEFAULT_REGION,
+};
+
+const app = new cdk.App();
+
+new AwsCdkNyanCatOnEc2Stack(app, 'cdk-nyan-cat-ec2-stack-dev', { env: devEnv });
+
+app.synth();
