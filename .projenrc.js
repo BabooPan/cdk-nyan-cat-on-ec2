@@ -1,12 +1,12 @@
-const { awscdk } = require("projen");
+const { awscdk } = require('projen');
 
-const PROJECT_NAME = "aws-cdk-nyan-cat-on-ec2";
-const PROJECT_DESCRIPTION = "Nyan cat web page hosted on EC2 Instance.";
+const PROJECT_NAME = 'aws-cdk-nyan-cat-on-ec2';
+const PROJECT_DESCRIPTION = 'Nyan cat web page hosted on EC2 Instance.';
 
-const project = new awscdk.AwsCdkConstructLibrary({
+const project = new awscdk.AwsCdkTypeScriptApp({
   name: PROJECT_NAME,
   description: PROJECT_DESCRIPTION,
-  repository: "https://gitlab.com/ecloudture/security/cspm-infrastructure",
+  repository: 'https://gitlab.com/ecloudture/security/cspm-infrastructure',
   authorName: 'Baboo Pan',
   authorEmail: 'lpig0818@gmail.com',
   keywords: ['aws', 'ec2', 'cdk', 'typescript'],
@@ -46,8 +46,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'yarn-error.log',
     'coverage',
     'venv',
-    'tsconfig.json',
-    'tsconfig.dev.json'
   ],
 });
 
