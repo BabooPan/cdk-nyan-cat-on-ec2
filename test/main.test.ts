@@ -1,6 +1,6 @@
 import * as assertions from '@aws-cdk/assertions';
 import * as cdk from '@aws-cdk/core';
-import { CdkNyanCatOnEc2 } from '../src/index';
+import { CdkNyanCatOnEc2 } from '../src/main';
 
 test('test create EC2 instance', () => {
   const app = new cdk.App();
