@@ -1,13 +1,12 @@
-import { expect as expectCDK, matchTemplate, MatchStyle } from '@aws-cdk/assert';
+import * as assertions from '@aws-cdk/assertions';
 import * as cdk from '@aws-cdk/core';
-import * as AwsCdkNyanCatOnEc2 from '../src/index';
+import { CdkNyanCatOnEc2 } from '../src/index';
 
-test('Empty Stack', () => {
+test('test create EC2 instance', () => {
   const app = new cdk.App();
   // WHEN
-  const stack = new AwsCdkNyanCatOnEc2.AwsCdkNyanCatOnEc2Stack(app, 'MyTestStack');
+  const stack = new cdk.Stack(app, 'test-stack');
   // THEN
-  expectCDK(stack).to(matchTemplate({
-    Resources: {},
-  }, MatchStyle.EXACT));
+  new CdkNyanCatOnEc2(stack, 'nyan-cat-on-ec2');
+  assertions.Template.fromStack(stack).findResources('AWS::EC2::Instance');
 });

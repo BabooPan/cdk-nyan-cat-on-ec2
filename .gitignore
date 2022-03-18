@@ -5,7 +5,6 @@
 !/.projen/files.json
 !/.github/workflows/pull-request-lint.yml
 !/.github/workflows/auto-approve.yml
-!/.github/workflows/stale.yml
 !/package.json
 !/LICENSE
 !/.npmignore
@@ -39,7 +38,6 @@ cdk.context.json
 yarn-error.log
 coverage
 venv
-tsconfig.dev.json
 !/.projenrc.js
 /test-reports/
 junit.xml
@@ -48,12 +46,15 @@ junit.xml
 !/.mergify.yml
 !/.github/pull_request_template.md
 !/test/
+!/tsconfig.json
 !/tsconfig.dev.json
 !/src/
 /lib
 /dist/
 !/.eslintrc.json
-.jsii
-tsconfig.json
-!/API.md
+/assets/
+!/cdk.json
+/cdk.out/
+.cdk.staging/
+.parcel-cache/
 !/.github/workflows/upgrade.yml
