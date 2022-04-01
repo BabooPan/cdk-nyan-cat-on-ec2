@@ -14,7 +14,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   stability: 'experimental',
   autoDetectBin: false,
   dependabot: false,
-  cdkVersion: '1.149.0',
+  cdkVersion: '1.151.0',
   // Default release the main branch with major version 1.
   majorVersion: 1,
   defaultReleaseBranch: 'master',
