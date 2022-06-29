@@ -14,13 +14,10 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   stability: 'experimental',
   autoDetectBin: false,
   dependabot: false,
-  cdkVersion: '1.151.0',
+  cdkVersion: '2.29.1',
   // Default release the main branch with major version 1.
   majorVersion: 1,
   defaultReleaseBranch: 'master',
-  cdkDependencies: [
-    '@aws-cdk/aws-ec2',
-  ],
   depsUpgradeOptions: {
     ignoreProjen: false,
     workflowOptions: {
@@ -34,9 +31,8 @@ const project = new awscdk.AwsCdkTypeScriptApp({
     secret: 'GITHUB_TOKEN',
     allowedUsernames: ['baboopan'],
   },
-  devDeps: [
-    'esbuild',
-  ],
+  deps: ['cdk-spot-one@latest'],
+  devDeps: ['esbuild'],
   gitignore: [
     '.vscode',
     '.dccache',

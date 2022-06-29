@@ -4,7 +4,15 @@ This is a nyan-cat page stored in EC2 Instance writen in TypeScript development 
 
 ## Steps
 
-Deploy with `cdk deploy`, and hold the seconds, the endpoint of website would print out.
+There's 3 architecture to host the nyan-cat application:
+
+1. `cdk-web`: On-Demand EC2 Instance.
+2. `cdk-web-spot`: Spot EC2 Instance with EIP.
+3. `cdk-web-alb-spot`: Spot AutoScaling Group with ALB.
+
+You can view the available templates with `cdk ls`.
+
+Deploy with `cdk deploy TEMPLATE_NAME`, and hold the seconds, the endpoint of website would print out.
 
 ![cdk-deploy](./images/cdk-deploy.png)
 
