@@ -1455,9 +1455,9 @@ case@1.6.3, case@^1.6.3:
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
 cdk-spot-one@latest:
-  version "2.0.182"
-  resolved "https://registry.yarnpkg.com/cdk-spot-one/-/cdk-spot-one-2.0.182.tgz#5af69f33e1a642ec99d23ef783f2d3551288aa4f"
-  integrity sha512-AqmAtYlJmQFy6xdYNMIMoNuKGq+0bjJ+P1AorjsGgoKLPKdMFllbikJARt2vlvnziCLvs6cQSHcyYWS1Xu0LJg==
+  version "2.0.183"
+  resolved "https://registry.yarnpkg.com/cdk-spot-one/-/cdk-spot-one-2.0.183.tgz#270dcd267b5b4ce804cef5c433bd608893d22ccb"
+  integrity sha512-L/y11JEVrf1v3wdR52zp01I1nXVzSXdCFKyuRYXV7Uu6gjtrTuz/I8xEYNiOtZ0CMIZemqzxb7E3L+k65ejWrA==
 
 chalk@^2.0.0:
   version "2.4.2"
@@ -1620,9 +1620,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10.0.5:
-  version "10.1.136"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.136.tgz#53ba8147f473c045c94c17befcdd1919a0089ca6"
-  integrity sha512-/4gE6pzTwUdsThf6VEcOaOJ00WeayNDsN+O1joSPWNa4OFqUSXxitoVaflspPpIEjt6QI3JGY8mjgHw2GQxSSg==
+  version "10.1.137"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.137.tgz#821e3e02df43f98b8ba9f709f96eaa29c456ebef"
+  integrity sha512-jRuNdceHnCB1JRybA1QQL8ZPI704I6jvQmNgyhen3dvQPYfBkhbyNGVabnLPd5IDnnW4Q5y8XkYugLX2hwnLmg==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
