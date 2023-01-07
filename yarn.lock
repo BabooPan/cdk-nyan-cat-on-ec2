@@ -1552,9 +1552,9 @@ case@1.6.3, case@^1.6.3:
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
 cdk-spot-one@latest:
-  version "2.0.256"
-  resolved "https://registry.yarnpkg.com/cdk-spot-one/-/cdk-spot-one-2.0.256.tgz#8fd0f19f301380f8140acee7ef228fc37ce15e76"
-  integrity sha512-Z63ZNqwdL7oXq1/a/j/Wgo2KzYIXiWzd4RA9EkZ0NVQcVq/wTQYqYbknUUwev+6GDjn5OC1W0xvYIbFA/h+dzw==
+  version "2.0.257"
+  resolved "https://registry.yarnpkg.com/cdk-spot-one/-/cdk-spot-one-2.0.257.tgz#9a09196457cd259afc9c6b229fa7aad19ea038f5"
+  integrity sha512-/RVfmy6gIbsPdAO6bepTOwKXKjtI+74DF5PBPBQlXwEMYhI9lzr3Bqn2F5D67Oork+uuBSN38zHc4B3sAO6k7w==
 
 chalk@^2.0.0:
   version "2.4.2"
@@ -1721,9 +1721,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10.0.5:
-  version "10.1.211"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.211.tgz#ecc7e20863a305363cc37d048333f10afb505d36"
-  integrity sha512-Ye4SgRf8GXtq1FVzoXDcSObWac55YOTjotbaxxnBFLKHiM0zvZRX0UoN/uwjwx5OMJp63bfoUTcNBB3fZijpPA==
+  version "10.1.212"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.212.tgz#c1eb6b424b0b29b5582359ef24c64363b38cdf84"
+  integrity sha512-75KvfIzTnSQr6kt2pmin/TmtazN5XgGzm6mFVG18+3TTWWL9TwtzPqJLbW2TQo4o1BMf4YkzI8Ka7tIPHsr+3w==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
@@ -4468,10 +4468,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.66.5:
-  version "0.66.5"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.66.5.tgz#2dfe17d49ce113b4275114714d5cd8223cb1fc37"
-  integrity sha512-CfprgVJOPnLciw6sctWcwB3m93BFYwr8UGfloUJz2Al+/3QBR8teMcDPO2TTJl7v48dUdJdANRPTScsMzZA4ew==
+projen@^0.66.7:
+  version "0.66.7"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.66.7.tgz#3f9d03443406d02ab274735b1fa79bd100d91294"
+  integrity sha512-y/f69J7FAXuIxqFEzVKuORFwSvQLGiuxqQ6qF9nLUfg5RvNpI/ppARZeaOnkPgFZtWY6iHFBcwfU186Is65oXQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
