@@ -55,7 +55,7 @@
   "dependencies": {
     "aws-cdk-lib": "^2.29.1",
     "cdk-spot-one": "latest",
-    "constructs": "^10.0.5"
+    "constructs": "^10.1.285"
   },
   "keywords": [
     "aws",
