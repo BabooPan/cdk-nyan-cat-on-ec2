@@ -53,7 +53,7 @@
     "typescript": "~3.9.10"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.29.1",
+    "aws-cdk-lib": "^2.80.0",
     "cdk-spot-one": "latest",
     "constructs": "^10.0.5"
   },
